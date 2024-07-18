@@ -38,8 +38,9 @@
     min-height: 100vh;
     font-family: Inter, sans-serif;
     font-size: 16px;
-    color: #000;
-    background-color: #fff;
+    color: #fff;
+    background-color: #000201;
+    line-height: 1.5;
   }
   
   
@@ -86,28 +87,66 @@
     border: none;
   }
   
-  /*
-  Доступно скрываю элементы
-  */
-  
+
   .visually-hidden {
     position: fixed;
     transform: scale(0);
   }
   
-  
-  /*
-  Пример контейнера
-  
-  Если контейнер 1180px по макету,
-  то для max-width прибавляем паддинги 30px*2, 
-  в итоге 1240px
-  Чтобы контент не прижимался к краям экрана
-  */
-  
   .container {
-    max-width: 1240px;
-    padding: 0 30px;
+    max-width: 1432px;
+    padding: 0 66px;
     margin: 0 auto;
   }
   
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .header__logo {
+  }
+  .header__link {
+    padding: 14px 20px 14px 20px;
+    border-radius: 52px;
+    background-color: #ff3d00;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    outline: none;
+  }
+
+  .header__link:hover{
+    background-color: #ff521b;
+  }
+
+  .header__link:focus{
+    background-color: #ff521b;
+    border-color: #ffffff;
+  }
+
+  .hero {
+  }
+
+  .container {
+  }
+
+  .hero__banner {
+  }
+
+  .hero__date {
+  }
+
+  .hero__arrow {
+  }
