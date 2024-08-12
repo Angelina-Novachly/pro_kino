@@ -113,8 +113,7 @@
     padding-top: 24px;
     padding-bottom: 24px;
   }
-  .header__logo {
-  }
+
   .header__link {
     padding: 14px 20px 14px 20px;
     border-radius: 52px;
@@ -137,12 +136,13 @@
   }
 
   .hero {
-    background: url(../img/kino-banner.jpeg);
+    background: linear-gradient(180.00deg, rgb(0, 0, 0, 0) 52.716%,rgba(0, 0, 0, 0.76) 65.309%), url(../img/photo_bg.jpg);
     background-size: cover;
-    height: 810px;
+    height: 827px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    padding: 60px 0;
   }
 
   .hero__date {
@@ -158,7 +158,7 @@
   .hero__arrow {
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
+  padding: 1px;
   }
 
   .hero__arrow svg:hover{
@@ -193,5 +193,91 @@
 
   .about__pic {
     flex-basis: 530px;
+  }
+
+  .trailers {
+    padding: 60px 0 120px;
+  }
+  
+  .trailers__buttons {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding-bottom: 16px;
+  }
+
+  .trailers__button {
+    padding: 14px 20px 14px 20px;
+    border-radius: 8px;
+    background-color: #272928;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  .trailers__button-active {
+    background-color: #ff3d00;
+  }
+
+  .trailers__button:focus,
+  .trailers__button:hover {
+    background-color: #ff521b;
+  }
+
+  .trailesr__wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+
+  }
+
+  .trailers__video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .footer {
+    background-color: #101010;
+    padding: 40px 0;
+    line-height: 1.4;
+  }
+
+  .footer__container {
+    display: grid;
+    gap: 36px;
+    grid-template-areas: 
+      "developers logo"
+      "copyright logo";
+  }
+
+  .footer__developers {
+    grid-area: developers;
+  }
+
+  .footer__link {
+    margin-bottom: 7px;
+  }
+
+  .footer__link:hover {
+    color: #ff521b;
+  }
+
+  .footer__link:last-child {
+    margin-bottom: 0px;
+  }
+
+  .footer__copyright {
+    grid-area: copyright;
+  }
+  .footer__logo {
+    grid-area: logo;
+    justify-self: end;
+    align-self: end;
+    width: 287px;
   }
 
